@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Shop Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button><i class="fas fa-search"></i></button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <div class="account-container">
+        <div class="account-header">
+            <h1>My Account</h1>
+            <p>View and manage your account information, addresses, orders, and more.</p>
+        </div>
+        <div class="account-content">
+            <div class="account-sidebar">
+                <div class="account-menu">
+                    <h3>My Account</h3>
+                    <ul>
+                        <li><a href="#" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="orders.html"><i class="fas fa-shopping-bag"></i> Orders</a></li>
+                        <li><a href="addresses.html"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                        <li><a href="favorites.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                        <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+                    </ul>
+                </div>
+                <button class="account-logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+            <div class="account-main">
+                <div class="account-section">
+                    <h2>Profile Information</h2>
+                    <div class="user-details">
+                        <div class="user-detail">
+                            <label>Full Name</label>
+                            <span>admin</span>
+                        </div>
+                        <div class="user-detail">
+                            <label>Email</label>
+                            <span>admin@gmail.com</span>
+                        </div>
+                        <div class="user-detail">
+                            <label>Phone</label>
+                            <span>+91 9988988989</span>
+                        </div>
+                        <div class="user-detail">
+                            <label>Gender</label>
+                            <span>female</span>
+                        </div>
+                        <div class="user-detail">
+                            <label>Date of Birth</label>
+                            <span>15-04-1990</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-section">
+                    <h2>Saved Addresses</h2>
+                    <div class="address-cards">
+                        <div class="address-card">
+                            <h4>Home</h4>
+                            <p>Rahul Sharma</p>
+                            <p>123, Green Avenue, Sector 10</p>
+                            <p>Delhi, 110001</p>
+                            <p>Phone: +91 9876543210</p>
+                            <div class="address-actions">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="address-card">
+                            <h4>Office</h4>
+                            <p>Rahul Sharma</p>
+                            <p>456, Tech Park, Sector 15</p>
+                            <p>Delhi, 110002</p>
+                            <p>Phone: +91 9876543210</p>
+                            <div class="address-actions">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="add-address">
+                            <i class="fas fa-plus"></i> Add New Address
+                        </div>
+                    </div>
+                </div>
+                <div class="account-section">
+                    <h2>Recent Orders</h2>
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#SM12345</td>
+                                <td>15-08-2023</td>
+                                <td>₹4,999.00</td>
+                                <td><span class="order-status status-delivered">Delivered</span></td>
+                                <td><a href="#" class="view-order">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#SM12346</td>
+                                <td>28-08-2023</td>
+                                <td>₹2,499.00</td>
+                                <td><span class="order-status status-shipped">Shipped</span></td>
+                                <td><a href="#" class="view-order">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>#SM12347</td>
+                                <td>10-09-2023</td>
+                                <td>₹1,799.00</td>
+                                <td><span class="order-status status-processing">Processing</span></td>
+                                <td><a href="#" class="view-order">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Mart - Your One-Stop Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button><i class="fas fa-search"></i></button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Your Style</h1>
+                <p>Explore our latest collections for men, women, kids, and premium skincare products.</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn primary-btn">Shop Now</a>
+                    <a href="#featured" class="btn secondary-btn">View Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/MENS_FASHION.jpg" alt="Men's Collection">
+                        </div>
+                        <h3>Men's Collection</h3>
+                        <a href="men.html" class="btn outline-btn">Shop Now</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/WOMENS_FASHION.jpg" alt="Women's Collection">
+                        </div>
+                        <h3>Women's Collection</h3>
+                        <a href="women.html" class="btn outline-btn">Shop Now</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/KIDS_FASHION.jpg" alt="Kids' Collection">
+                        </div>
+                        <h3>Kids' Collection</h3>
+                        <a href="kids.html" class="btn outline-btn">Shop Now</a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/SKIN_CARE.jpg" alt="Skincare Collection">
+                        </div>
+                        <h3>Skincare Collection</h3>
+                        <a href="skincare.html" class="btn outline-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="featured-controls">
+                    <button class="featured-tab active" data-category="trending">Trending</button>
+                    <button class="featured-tab" data-category="new-arrivals">New Arrivals</button>
+                    <button class="featured-tab" data-category="best-sellers">Best Sellers</button>
+                </div>
+                <div class="product-grid" id="featured-products">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="deals">
+            <div class="container">
+                <div class="deals-banner">
+                    <div class="deals-content">
+                        <h2>End of Season Sale</h2>
+                        <p>Up to 50% off on selected items</p>
+                        <a href="#" class="btn primary-btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Aside Bar -->
+    <div class="aside-overlay"></div>
+    <aside class="aside-bar">
+        <div class="aside-header">
+            <h3>Menu</h3>
+            <button class="close-aside">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="aside-content">
+            <div class="aside-section">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men's Collection</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women's Collection</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids Collection</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </div>
+            <div class="aside-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Featured Products</a></li>
+                    <li><a href="#"><i class="fas fa-tag"></i> Special Offers</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Latest News</a></li>
+                </ul>
+            </div>
+            <div class="aside-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> Shipping Info</a></li>
+                    <li><a href="#"><i class="fas fa-undo"></i> Returns Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
+

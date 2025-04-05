@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Shop Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="orders-container">
+        <div class="orders-header">
+            <h1>My Orders</h1>
+            <p>Track and manage your orders</p>
+        </div>
+        
+        <div class="orders-content">
+            <div class="orders-sidebar">
+                <div class="orders-menu">
+                    <h3>Order Status</h3>
+                    <ul>
+                        <li><a href="#" class="active">All Orders</a></li>
+                        <li><a href="#">Processing</a></li>
+                        <li><a href="#">Shipped</a></li>
+                        <li><a href="#">Delivered</a></li>
+                        <li><a href="#">Cancelled</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="orders-main">
+                <div class="orders-list">
+                    <!-- Order Card 1 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #SM12345</span>
+                                <span class="order-date">Placed on 15-08-2023</span>
+                            </div>
+                            <div class="order-status status-delivered">
+                                <i class="fas fa-check-circle"></i> Delivered
+                            </div>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="images/WHITE-TSHIRT.jpg" alt="Classic White T-Shirt">
+                                <div class="item-details">
+                                    <h4>Classic White T-Shirt</h4>
+                                    <p>Size: M</p>
+                                    <p>Quantity: 2</p>
+                                    <p>₹999.00</p>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <img src="images/SLIM-FIT.jpg" alt="Slim Fit Blue Jeans">
+                                <div class="item-details">
+                                    <h4>Slim Fit Blue Jeans</h4>
+                                    <p>Size: 32</p>
+                                    <p>Quantity: 1</p>
+                                    <p>₹2,499.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>₹4,497.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>₹809.46</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>₹5,306.46</span>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn secondary-btn"><i class="fas fa-redo"></i> Reorder</button>
+                            <button class="btn secondary-btn"><i class="fas fa-file-invoice"></i> Invoice</button>
+                            <button class="btn secondary-btn"><i class="fas fa-star"></i> Review</button>
+                        </div>
+                    </div>
+
+                    <!-- Order Card 2 -->
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <span class="order-id">Order #SM12346</span>
+                                <span class="order-date">Placed on 28-08-2023</span>
+                            </div>
+                            <div class="order-status status-shipped">
+                                <i class="fas fa-truck"></i> Shipped
+                            </div>
+                        </div>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="images/OXFORD.jpg" alt="Casual Oxford Shirt">
+                                <div class="item-details">
+                                    <h4>Casual Oxford Shirt</h4>
+                                    <p>Size: L</p>
+                                    <p>Quantity: 1</p>
+                                    <p>₹1,499.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>₹1,499.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>₹269.82</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>₹1,768.82</span>
+                            </div>
+                        </div>
+                        <div class="order-actions">
+                            <button class="btn secondary-btn"><i class="fas fa-truck"></i> Track Order</button>
+                            <button class="btn secondary-btn"><i class="fas fa-file-invoice"></i> Invoice</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html> 

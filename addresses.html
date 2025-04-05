@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Addresses - Shop Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="addresses-container">
+        <div class="addresses-header">
+            <h1>My Addresses</h1>
+            <p>Manage your shipping addresses</p>
+        </div>
+
+        <div class="addresses-content">
+            <div class="addresses-list">
+                <!-- Default Address -->
+                <div class="address-card default">
+                    <div class="address-header">
+                        <h3>Default Address</h3>
+                        <span class="default-badge"><i class="fas fa-check-circle"></i> Default</span>
+                    </div>
+                    <div class="address-details">
+                        <p class="name">John Doe</p>
+                        <p class="phone">+91 98765 43210</p>
+                        <p class="address">123 Main Street, Apartment 4B</p>
+                        <p class="city">Mumbai, Maharashtra 400001</p>
+                    </div>
+                    <div class="address-actions">
+                        <button class="btn secondary-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="btn secondary-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <!-- Additional Address -->
+                <div class="address-card">
+                    <div class="address-header">
+                        <h3>Home</h3>
+                    </div>
+                    <div class="address-details">
+                        <p class="name">John Doe</p>
+                        <p class="phone">+91 98765 43210</p>
+                        <p class="address">456 Park Avenue, House No. 7</p>
+                        <p class="city">Delhi, Delhi 110001</p>
+                    </div>
+                    <div class="address-actions">
+                        <button class="btn secondary-btn"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="btn secondary-btn"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                </div>
+
+                <!-- Add New Address Button -->
+                <div class="add-address-card">
+                    <button class="btn primary-btn" id="add-address-btn">
+                        <i class="fas fa-plus"></i> Add New Address
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Address Modal -->
+    <div class="modal" id="address-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Address</h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="address-form">
+                <div class="form-group">
+                    <label for="address-type">Address Type</label>
+                    <select id="address-type" required>
+                        <option value="">Select Address Type</option>
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address Line</label>
+                    <input type="text" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">PIN Code</label>
+                    <input type="text" id="pincode" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="set-default">
+                    <label for="set-default">Set as default address</label>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn secondary-btn" id="cancel-btn">Cancel</button>
+                    <button type="submit" class="btn primary-btn">Save Address</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/addresses.js"></script>
+</body>
+</html> 

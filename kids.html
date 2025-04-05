@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Collection - Shop Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button><i class="fas fa-search"></i></button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <section class="category-banner" style="background-image: url('images/KIDS-FASHION.png');">
+        <div class="container">
+            <h1>Kids' Collection</h1>
+            <p>Discover our latest kids' fashion collection, featuring everything from casual essentials to special occasion outfits. Shop the latest trends for your little ones.</p>
+        </div>
+    </section>
+
+    <div class="product-container">
+        <div class="filters">
+            <div class="filter-section">
+                <h3>Category</h3>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="tops"> Tops
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="bottoms"> Bottoms
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="outerwear"> Outerwear
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="dresses"> Dresses
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="footwear"> Footwear
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="accessories"> Accessories
+                </label>
+            </div>
+            <div class="filter-section">
+                <h3>Age</h3>
+                <label class="filter-option">
+                    <input type="checkbox" name="age" value="2-3y"> 2-3 Years
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="age" value="4-5y"> 4-5 Years
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="age" value="6-7y"> 6-7 Years
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="age" value="8-9y"> 8-9 Years
+                </label>
+            </div>
+            <div class="filter-section">
+                <h3>Color</h3>
+                <label class="filter-option">
+                    <input type="checkbox" name="color" value="blue"> Blue
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="color" value="pink"> Pink
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="color" value="red"> Red
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="color" value="yellow"> Yellow
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="color" value="green"> Green
+                </label>
+            </div>
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" class="price-slider" min="0" max="2000" value="2000" step="100">
+                    <span class="price-display">₹0 - ₹2000</span>
+                </div>
+            </div>
+            <button class="clear-filters">Clear Filters</button>
+        </div>
+        <div class="products">
+            <div class="product-list-header">
+                <div class="product-count">
+                    Showing 24 of 24 products
+                </div>
+                <div class="sort-options">
+                    <span class="sort-label">Sort by:</span>
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Top Rated</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products-grid" id="kids-products">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load kids products
+            const kidsProductsContainer = document.getElementById('kids-products');
+            const kidsProducts = allProducts.kids;
+            
+            // Function to render products
+            function renderProducts(container, products) {
+                container.innerHTML = products.map(product => `
+                    <div class="product-card" data-id="${product.id}">
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.title}">
+                            <button class="product-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">${product.title}</h3>
+                            <div class="product-price">₹${product.price}</div>
+                            <div class="product-rating">
+                                <span class="stars">${'★'.repeat(Math.floor(product.rating))}${'☆'.repeat(5-Math.floor(product.rating))}</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Render kids products
+            renderProducts(kidsProductsContainer, kidsProducts);
+
+            // Filter functionality
+            const filterCheckboxes = document.querySelectorAll('.filter-option input[type="checkbox"]');
+            const priceSlider = document.querySelector('.price-slider');
+            const priceDisplay = document.querySelector('.price-display');
+            const clearFiltersBtn = document.querySelector('.clear-filters');
+            const sortSelect = document.querySelector('.sort-select');
+
+            function applyFilters() {
+                let filteredProducts = [...kidsProducts];
+
+                // Category filter
+                const selectedCategories = Array.from(document.querySelectorAll('input[name="category"]:checked'))
+                    .map(checkbox => checkbox.value);
+                if (selectedCategories.length > 0) {
+                    filteredProducts = filteredProducts.filter(product => 
+                        selectedCategories.includes(product.subcategory.toLowerCase()));
+                }
+
+                // Color filter
+                const selectedColors = Array.from(document.querySelectorAll('input[name="color"]:checked'))
+                    .map(checkbox => checkbox.value);
+                if (selectedColors.length > 0) {
+                    filteredProducts = filteredProducts.filter(product => 
+                        product.color.some(type => selectedColors.includes(type.toLowerCase())));
+                }
+
+                // Price filter
+                const maxPrice = parseInt(priceSlider.value);
+                filteredProducts = filteredProducts.filter(product => product.price <= maxPrice);
+
+                // Sort products
+                const sortValue = sortSelect.value;
+                switch(sortValue) {
+                    case 'price-low':
+                        filteredProducts.sort((a, b) => a.price - b.price);
+                        break;
+                    case 'price-high':
+                        filteredProducts.sort((a, b) => b.price - a.price);
+                        break;
+                    case 'rating':
+                        filteredProducts.sort((a, b) => b.rating - a.rating);
+                        break;
+                    case 'newest':
+                        // Assuming newer products have higher IDs
+                        filteredProducts.sort((a, b) => b.id.split('-')[1] - a.id.split('-')[1]);
+                        break;
+                }
+
+                renderProducts(kidsProductsContainer, filteredProducts);
+            }
+
+            // Event listeners
+            filterCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', applyFilters);
+            });
+
+            priceSlider.addEventListener('input', function() {
+                priceDisplay.textContent = `₹0 - ₹${this.value}`;
+                applyFilters();
+            });
+
+            clearFiltersBtn.addEventListener('click', function() {
+                filterCheckboxes.forEach(checkbox => checkbox.checked = false);
+                priceSlider.value = 5000;
+                priceDisplay.textContent = '₹0 - ₹5000';
+                sortSelect.value = 'featured';
+                renderProducts(kidsProductsContainer, kidsProducts);
+            });
+
+            sortSelect.addEventListener('change', applyFilters);
+        });
+    </script>
+</body>
+</html>

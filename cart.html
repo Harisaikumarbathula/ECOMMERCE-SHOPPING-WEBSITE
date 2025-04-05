@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Shop Mart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1><i class="fas fa-shopping-bag"></i> ShopMart</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                    <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                    <li><a href="kids.html"><i class="fas fa-baby"></i> Kids</a></li>
+                    <li><a href="skincare.html"><i class="fas fa-spa"></i> Skincare</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon" id="search-icon"><i class="fas fa-search"></i></a>
+                <a href="favorites.html" class="icon" id="wishlist-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon" id="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="account.html" class="icon" id="account-icon"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search for products...">
+            <button><i class="fas fa-search"></i></button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Your Cart</h1>
+            <p>Review and modify your items before checkout.</p>
+        </div>
+        <div class="cart-content" id="cart-content">
+            <div class="cart-items" id="cart-items">
+                &lt;!-- Cart items will be loaded dynamically -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">₹0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>GST (18%)</span>
+                    <span id="summary-tax">₹0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span id="summary-shipping">₹0.00</span>
+                </div>
+                <div class="summary-item summary-total">
+                    <span>Total</span>
+                    <span id="summary-total">₹0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <a href="index.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="locations.html">Store Locations</a></li>
+                    <li><a href="responsibility.html">Our Responsibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="returns.html">Returns & Exchanges</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter to receive updates on new arrivals, special offers, and more.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shop Mart. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get cart from localStorage
+            const cart = getCart();
+            const cartItemsContainer = document.getElementById('cart-items');
+            
+            // Check if cart is empty
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = `
+                    <div class="cart-empty">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h2>Your cart is empty</h2>
+                        <p>Looks like you haven't added anything to your cart yet.</p>
+                        <a href="index.html" class="btn primary-btn">Continue Shopping</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render cart items with optimized template
+            const cartItemsHTML = cart.map(item => `
+                <div class="cart-item" data-id="${item.id}">
+                    <div class="cart-item-image">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy">
+                    </div>
+                    <div class="cart-item-details">
+                        <h3>${item.title}</h3>
+                        <div class="cart-item-category">${item.id.split('-')[0]}</div>
+                        <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn" data-action="decrease">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" max="10">
+                            <button class="quantity-btn" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-item-total">₹${(item.price * item.quantity).toFixed(2)}</div>
+                        <button class="remove-item" data-id="${item.id}">
+                            <i class="fas fa-trash"></i> Remove
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            cartItemsContainer.innerHTML = cartItemsHTML;
+
+            // Event delegation for quantity buttons
+            cartItemsContainer.addEventListener('click', function(e) {
+                const quantityBtn = e.target.closest('.quantity-btn');
+                if (quantityBtn) {
+                    const cartItem = quantityBtn.closest('.cart-item');
+                    const input = cartItem.querySelector('.quantity-input');
+                    const currentValue = parseInt(input.value);
+                    const action = quantityBtn.dataset.action;
+
+                    let newValue = currentValue;
+                    if (action === 'increase' && currentValue < 10) {
+                        newValue = currentValue + 1;
+                    } else if (action === 'decrease' && currentValue > 1) {
+                        newValue = currentValue - 1;
+                    }
+
+                    if (newValue !== currentValue) {
+                        input.value = newValue;
+                        const itemId = cartItem.dataset.id;
+                        if (updateCartItemQuantity(itemId, newValue)) {
+                            updateCartItemTotal(cartItem, newValue);
+                            updateCartSummary();
+                        }
+                    }
+                }
+            });
+
+            // Event delegation for remove buttons
+            cartItemsContainer.addEventListener('click', function(e) {
+                const removeBtn = e.target.closest('.remove-item');
+                if (removeBtn) {
+                    const itemId = removeBtn.dataset.id;
+                    if (removeFromCart(itemId)) {
+                        const cartItem = removeBtn.closest('.cart-item');
+                        cartItem.remove();
+                        updateCartSummary();
+                        
+                        // Check if cart is empty after removal
+                        if (cartItemsContainer.children.length === 0) {
+                            cartItemsContainer.innerHTML = `
+                                <div class="cart-empty">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <h2>Your cart is empty</h2>
+                                    <p>Looks like you haven't added anything to your cart yet.</p>
+                                    <a href="index.html" class="btn primary-btn">Continue Shopping</a>
+                                </div>
+                            `;
+                        }
+                    }
+                }
+            });
+
+            // Update cart summary
+            updateCartSummary();
+        });
+    </script>
+</body>
+</html>
+
