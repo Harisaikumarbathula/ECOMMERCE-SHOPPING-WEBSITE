@@ -234,7 +234,7 @@ function getRandomProducts(count, type = "normal") {
     const title = `Product ${i + 1}`
     const price = Math.floor(Math.random() * 1000) + 100
     const category = "Generic"
-    const image = `https://via.placeholder.com/150` // Replace with actual image URLs
+    const image = "https://via.placeholder.com/150" // Replace with actual image URLs
 
     products.push({ id, title, price, category, image })
   }
