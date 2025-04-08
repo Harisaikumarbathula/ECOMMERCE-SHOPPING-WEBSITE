@@ -8,7 +8,7 @@ const allProducts = {
         category: "mens",
         subcategory: "T-Shirts",
         color: "White",
-        image: "/images/WHITE-TSHIRT.jpg?height=400&width=300&text=Classic+White+T-Shirt",
+        image: "images/WHITE-TSHIRT.jpg?height=400&width=300&text=Classic+White+T-Shirt",
       },
       {
         id: 2,
@@ -17,7 +17,7 @@ const allProducts = {
         category: "mens",       
         subcategory: "Jeans",
         color: "Blue",
-        image: "/images/SLIM-FIT.jpg?height=400&width=300&text=Slim+Fit+Blue+Jeans",
+        image: "images/SLIM-FIT.jpg?height=400&width=300&text=Slim+Fit+Blue+Jeans",
       },
       {
         id: 3,
@@ -26,7 +26,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Shirts",
         color: "Light Blue",
-        image: "/images/OXFORD.jpg?height=400&width=300&text=Casual+Oxford+Shirt",
+        image: "images/OXFORD.jpg?height=400&width=300&text=Casual+Oxford+Shirt",
       },
       {
         id: 4,
@@ -35,7 +35,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jackets",
         color: "Black",
-        image: "/images/BLACK-DENIM.jpg?height=400&width=300&text=Black+Denim+Jacket",
+        image: "images/BLACK-DENIM.jpg?height=400&width=300&text=Black+Denim+Jacket",
       },
       {
         id: 5,
@@ -44,7 +44,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Pants",
         color: "Gray",
-        image: "/images/CHINO.jpg?height=400&width=300&text=Gray+Chino+Pants",
+        image: "images/CHINO.jpg?height=400&width=300&text=Gray+Chino+Pants",
       },
       {
         id: 6,
@@ -53,7 +53,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Accessories",
         color: "Brown",
-        image: "/images/LEATHER-BELT.jpg?height=400&width=300&text=Leather+Belt",
+        image: "images/LEATHER-BELT.jpg?height=400&width=300&text=Leather+Belt",
       },
       {
         id: 7,
@@ -62,7 +62,7 @@ const allProducts = {
         category: "mens",
         subcategory: "T-Shirts",
         color: "Navy",
-        image: "/images/STRIPED-POLO.jpg?height=400&width=300&text=Striped+Polo+Shirt",
+        image: "images/STRIPED-POLO.jpg?height=400&width=300&text=Striped+Polo+Shirt",
       },
       {
         id: 8,
@@ -71,7 +71,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jeans",
         color: "Dark Blue",
-        image: "/images/RELAXED-FIT.jpg?height=400&width=300&text=Relaxed+Fit+Jeans",
+        image: "images/RELAXED-FIT.jpg?height=400&width=300&text=Relaxed+Fit+Jeans",
       },
       {
         id: 9,
@@ -80,7 +80,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Shirts",
         color: "White",
-        image: "/images/WHITE-SHIRT.jpg?height=400&width=300&text=White+Dress+Shirt",
+        image: "images/WHITE-SHIRT.jpg?height=400&width=300&text=White+Dress+Shirt",
       },
       {
         id: 10,
@@ -89,7 +89,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jackets",
         color: "Green",
-        image: "/images/BOMBER.jpg?height=400&width=300&text=Bomber+Jacket",
+        image: "images/BOMBER.jpg?height=400&width=300&text=Bomber+Jacket",
       },
       {
         id: 11,
@@ -98,7 +98,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Pants",
         color: "Black",
-        image: "/images/BLACK-DRESS.jpg?height=400&width=300&text=Black+Dress+Pants",
+        image: "images/BLACK-DRESS.jpg?height=400&width=300&text=Black+Dress+Pants",
       },    
       {
         id: 12,
@@ -107,7 +107,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Accessories",
         color: "Brown",
-        image: "/images/LEATHER-WALLET.jpg?height=400&width=300&text=Leather+Wallet",
+        image: "images/LEATHER-WALLET.jpg?height=400&width=300&text=Leather+Wallet",
       },
       {
         id: 13,
@@ -116,7 +116,7 @@ const allProducts = {
         category: "mens",
         subcategory: "T-Shirts",
         color: "Black",
-        image: "/images/V-NECK.jpg?height=400&width=300&text=V-Neck+T-Shirt",
+        image: "images/V-NECK.jpg?height=400&width=300&text=V-Neck+T-Shirt",
       },
       {
         id: 14,
@@ -125,7 +125,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jeans",
         color: "Black",
-        image: "/images/SLIM-BLACK.jpg?height=400&width=300&text=Slim+Black+Jeans",
+        image: "images/SLIM-BLACK.jpg?height=400&width=300&text=Slim+Black+Jeans",
       },
       {
         id: 15,
@@ -134,7 +134,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Shirts",
         color: "Red",
-        image: "/images/BUTTON.jpg?height=400&width=300&text=Plaid+Button-Up",
+        image: "images/BUTTON.jpg?height=400&width=300&text=Plaid+Button-Up",
       },
       {
         id: 16,
@@ -143,7 +143,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jackets",     
         color: "Black",
-        image: "/images/LEATHER-JACKET.jpg?height=400&width=300&text=Leather+Jacket",
+        image: "images/LEATHER-JACKET.jpg?height=400&width=300&text=Leather+Jacket",
       },
       {
         id: 17,
@@ -152,7 +152,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Pants"  ,
         color: "Beige",
-        image: "/images/KHAKI.jpg?height=400&width=300&text=Khaki+Pants",
+        image: "images/KHAKI.jpg?height=400&width=300&text=Khaki+Pants",
       },
       {
         id: 18,
@@ -161,7 +161,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Accessories",
         color: "Brown",
-        image: "/images/LEATHER-WATCH.jpg?height=400&width=300&text=Leather+Watch",
+        image: "images/LEATHER-WATCH.jpg?height=400&width=300&text=Leather+Watch",
       },
       {
         id: 19,
@@ -170,7 +170,7 @@ const allProducts = {
         category: "mens",
         subcategory: "T-Shirts",
         color: "White",
-        image: "/images/PRINTED-SHIRT.jpg?height=400&width=300&text=Graphic+T-Shirt",
+        image: "images/PRINTED-SHIRT.jpg?height=400&width=300&text=Graphic+T-Shirt",
       },
       {
         id: 20,
@@ -179,7 +179,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jeans",
         color: "Blue",
-        image: "/images/DISTRESSED.jpg?height=400&width=300&text=Distressed+Jeans",
+        image: "images/DISTRESSED.jpg?height=400&width=300&text=Distressed+Jeans",
       },
       {
         id: 21,
@@ -188,7 +188,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Shirts",
         color: "Blue",
-        image: "/images/DENIM.jpg?height=400&width=300&text=Denim+Shirt",
+        image: "images/DENIM.jpg?height=400&width=300&text=Denim+Shirt",
       },
       {
         id: 22,
@@ -197,7 +197,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Jackets",
         color: "Gray",
-        image: "/images/WINDBREAKER.jpg?height=400&width=300&text=Windbreaker",
+        image: "images/WINDBREAKER.jpg?height=400&width=300&text=Windbreaker",
       },
       {
         id: 23,
@@ -206,7 +206,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Pants",
         color: "Green",
-        image: "/images/CARGO.jpg?height=400&width=300&text=Cargo+Pants",
+        image: "images/CARGO.jpg?height=400&width=300&text=Cargo+Pants",
       },
       {
         id: 24,
@@ -215,7 +215,7 @@ const allProducts = {
         category: "mens",
         subcategory: "Accessories",
         color: "Brown",
-        image: "/images/LEATHER-BRACELET.jpg?height=400&width=300&text=Leather+Bracelet",
+        image: "images/LEATHER-BRACELET.jpg?height=400&width=300&text=Leather+Bracelet",
       },
     ],
     women: [
@@ -226,7 +226,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Dresses",
         color: "Pink",
-        image: "/images/FLORAL-SUMMER.jpg?height=400&width=300&text=Floral+Summer+Dress",
+        image: "images/FLORAL-SUMMER.jpg?height=400&width=300&text=Floral+Summer+Dress",
       },
       {
         id: 26,
@@ -235,7 +235,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Tops",
         color: "White",
-        image: "/images/CLASSIC-WHITE-BLOUSE.jpg?height=400&width=300&text=Classic+White+Blouse",
+        image: "images/CLASSIC-WHITE-BLOUSE.jpg?height=400&width=300&text=Classic+White+Blouse",
       },
       {
         id: 27,
@@ -244,7 +244,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Pants",
         color: "Blue",
-        image: "/images/HIGH-WAIST-JEANS.jpg?height=400&width=300&text=High-Waist+Jeans",
+        image: "images/HIGH-WAIST-JEANS.jpg?height=400&width=300&text=High-Waist+Jeans",
       },
       {
         id: 28,
@@ -253,7 +253,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Skirts",
         color: "Black",
-        image: "/images/A-LINE-SKIRT.jpg?height=400&width=300&text=A-Line+Skirt",
+        image: "images/A-LINE-SKIRT.jpg?height=400&width=300&text=A-Line+Skirt",
       },
       {
         id: 29,
@@ -262,7 +262,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Jackets",
         color: "Black",
-        image: "/images/LEATHER-JACKET.jpg?height=400&width=300&text=Leather+Jacket",
+        image: "images/LEATHER-JACKET.jpg?height=400&width=300&text=Leather+Jacket",
       },
       {
         id: 30,
@@ -271,7 +271,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Accessories",
         color: "Gold",
-        image: "/images/GOLD-NECKLACE.jpg?height=400&width=300&text=Gold+Necklace",
+        image: "images/GOLD-NECKLACE.jpg?height=400&width=300&text=Gold+Necklace",
       },
       {
         id: 31,
@@ -280,7 +280,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Dresses",
         color: "Black",
-        image: "/images/COCKTAIL-DRESS.jpg?height=400&width=300&text=Cocktail+Dress",
+        image: "images/COCKTAIL-DRESS.jpg?height=400&width=300&text=Cocktail+Dress",
       },
       {
         id: 32,
@@ -289,7 +289,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Tops",
         color: "White",
-        image: "/images/SILK-CAMISOLE.jpg?height=400&width=300&text=Silk+Camisole",
+        image: "images/SILK-CAMISOLE.jpg?height=400&width=300&text=Silk+Camisole",
       },
       {
         id: 33,
@@ -298,7 +298,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Pants",
         color: "Black",
-        image: "/images/WIDE-LEG-PANTS.jpg?height=400&width=300&text=Wide-Leg+Pants",
+        image: "images/WIDE-LEG-PANTS.jpg?height=400&width=300&text=Wide-Leg+Pants",
       },
       {
         id: 34,
@@ -307,7 +307,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Skirts",
         color: "Blue",
-        image: "/images/PLEATED-SKIRT.jpg?height=400&width=300&text=Pleated+Skirt",
+        image: "images/PLEATED-SKIRT.jpg?height=400&width=300&text=Pleated+Skirt",
       },
       {
         id: 35,
@@ -316,7 +316,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Jackets",
         color: "Blue",
-        image: "/images/DENIM-JACKET.jpg?height=400&width=300&text=Denim+Jacket",
+        image: "images/DENIM-JACKET.jpg?height=400&width=300&text=Denim+Jacket",
       },
       {
         id: 36,
@@ -325,7 +325,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Accessories",
         color: "White",
-        image: "/images/PERAL-EARRING.jpg?height=400&width=300&text=Pearl+Earrings",
+        image: "images/PERAL-EARRING.jpg?height=400&width=300&text=Pearl+Earrings",
       },
       {
         id: 37,
@@ -334,7 +334,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Dresses",
         color: "Green",
-        image: "/images/MAXI-DRESS.jpg?height=400&width=300&text=Maxi+Dress",
+        image: "images/MAXI-DRESS.jpg?height=400&width=300&text=Maxi+Dress",
       },
       {
         id: 38,
@@ -343,7 +343,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Tops",
         color: "Black",
-        image: "/images/TURTLENECK-SWEATER.jpg?height=400&width=300&text=Turtleneck+Sweater",
+        image: "images/TURTLENECK-SWEATER.jpg?height=400&width=300&text=Turtleneck+Sweater",
       },
       {
         id: 39,
@@ -352,7 +352,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Pants",
         color: "White",
-        image: "/images/CULOTTES.jpg?height=400&width=300&text=Culottes",
+        image: "images/CULOTTES.jpg?height=400&width=300&text=Culottes",
       },
       {
         id: 40,
@@ -361,7 +361,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Skirts",
         color: "Red",
-        image: "/images/PENCIL-SKIRT.jpg?height=400&width=300&text=Pencil+Skirt",
+        image: "images/PENCIL-SKIRT.jpg?height=400&width=300&text=Pencil+Skirt",
       },
       {
         id: 41,
@@ -370,7 +370,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Jackets",
         color: "Black",
-        image: "/images/BLAZER.jpg?height=400&width=300&text=Blazer",
+        image: "images/BLAZER.jpg?height=400&width=300&text=Blazer",
       },
       {
         id: 42,
@@ -379,7 +379,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Accessories",
         color: "Pink",
-        image: "/images/SILK-SCRAF.jpg?height=400&width=300&text=Silk+Scarf",
+        image: "images/SILK-SCRAF.jpg?height=400&width=300&text=Silk+Scarf",
       },
       {
         id: 43,
@@ -388,7 +388,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Dresses",
         color: "Blue",
-        image: "/images/WRAP-DRESS.jpg?height=400&width=300&text=Wrap+Dress",
+        image: "images/WRAP-DRESS.jpg?height=400&width=300&text=Wrap+Dress",
       },
       {
         id: 44,
@@ -397,7 +397,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Tops",
         color: "White",
-        image: "/images/LACE-TOP.jpg?height=400&width=300&text=Lace+Top",
+        image: "images/LACE-TOP.jpg?height=400&width=300&text=Lace+Top",
       },
       {
         id: 45,
@@ -406,7 +406,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Pants",
         color: "Green",
-        image: "/images/CARGO-PANTS.jpg?height=400&width=300&text=Cargo+Pants",
+        image: "images/CARGO-PANTS.jpg?height=400&width=300&text=Cargo+Pants",
       },
       {
         id: 46,
@@ -415,7 +415,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Skirts",
         color: "Black",
-        image: "/images/MIDI-SKIRT.jpg?height=400&width=300&text=Midi+Skirt",
+        image: "images/MIDI-SKIRT.jpg?height=400&width=300&text=Midi+Skirt",
       },
       {
         id: 47,
@@ -424,7 +424,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Jackets",
         color: "Beige",
-        image: "/images/TRENCH-COAT.jpg?height=400&width=300&text=Trench+Coat",
+        image: "images/TRENCH-COAT.jpg?height=400&width=300&text=Trench+Coat",
       },
       {
         id: 48,
@@ -433,7 +433,7 @@ const allProducts = {
         category: "womens",
         subcategory: "Accessories",
         color: "Gold",
-        image: "/images/STATEMENT-NECKLACE.jpg?height=400&width=300&text=Statement+Necklace",
+        image: "images/STATEMENT-NECKLACE.jpg?height=400&width=300&text=Statement+Necklace",
       }
     ],
     kids: [
@@ -445,7 +445,7 @@ const allProducts = {
         subcategory: "Tops",
         ageGroup: "Baby (0-24 months)",
         color: "Blue",
-        image: "/images/BABY-SET.jpg?height=400&width=300&text=Baby+Onesie+Set",
+        image: "images/BABY-SET.jpg?height=400&width=300&text=Baby+Onesie+Set",
       },
       {
         id: 50,
@@ -455,7 +455,7 @@ const allProducts = {
         subcategory: "Bottoms",
         ageGroup: "Toddler (2-4 years)",
         color: "Blue",
-        image: "/images/TODDLER-DENIM.jpg?height=400&width=300&text=Toddler+Denim+Jeans",
+        image: "images/TODDLER-DENIM.jpg?height=400&width=300&text=Toddler+Denim+Jeans",
       },
       {
         id: 51,
@@ -465,7 +465,7 @@ const allProducts = {
         subcategory: "Dresses",
         ageGroup: "Kids (4-7 years)",
         color: "Pink",
-        image: "/images/PRINCESS-DRESS.jpg?height=400&width=300&text=Princess+Dress",
+        image: "images/PRINCESS-DRESS.jpg?height=400&width=300&text=Princess+Dress",
       },
       {
         id: 52,
@@ -475,7 +475,7 @@ const allProducts = {
         subcategory: "Outerwear",
         ageGroup: "Older Kids (8-14 years)",
         color: "Red",
-        image: "/images/Kids Winter Jacket.jpg?height=400&width=300&text=Kids+Winter+Jacket",
+        image: "images/Kids Winter Jacket.jpg?height=400&width=300&text=Kids+Winter+Jacket",
       },
       {
         id: 53,
@@ -485,7 +485,7 @@ const allProducts = {
         subcategory: "Shoes",
         ageGroup: "Baby (0-24 months)",
         color: "White",
-        image: "/images/Baby Sneakers.jpg?height=400&width=300&text=Baby+Sneakers",
+        image: "images/Baby Sneakers.jpg?height=400&width=300&text=Baby+Sneakers",
       },
       {
         id: 54,
@@ -495,7 +495,7 @@ const allProducts = {
         subcategory: "Accessories",
         ageGroup: "Older Kids (8-14 years)",
         color: "Blue",
-        image: "/images/Kids Backpack.jpg?height=400&width=300&text=Kids+Backpack",
+        image: "images/Kids Backpack.jpg?height=400&width=300&text=Kids+Backpack",
       },
       {
         id: 55,
@@ -505,7 +505,7 @@ const allProducts = {
         subcategory: "Tops",
         ageGroup: "Toddler (2-4 years)",
         color: "Yellow",
-        image: "/images/Toddler T-Shirt Set.jpg?height=400&width=300&text=Toddler+T-Shirt+Set",
+        image: "images/Toddler T-Shirt Set.jpg?height=400&width=300&text=Toddler+T-Shirt+Set",
       },
       {
         id: 56,
@@ -515,7 +515,7 @@ const allProducts = {
         subcategory: "Bottoms",
         ageGroup: "Kids (4-7 years)",
         color: "Green",
-        image: "/images/Kids Cargo Pants.jpg?height=400&width=300&text=Kids+Cargo+Pants",
+        image: "images/Kids Cargo Pants.jpg?height=400&width=300&text=Kids+Cargo+Pants",
       },
       {
         id: 57,
@@ -525,7 +525,7 @@ const allProducts = {
         subcategory: "Dresses",
         ageGroup: "Toddler (2-4 years)",
         color: "Purple",
-        image: "/images/Tutu Dress.jpg?height=400&width=300&text=Tutu+Dress",
+        image: "images/Tutu Dress.jpg?height=400&width=300&text=Tutu+Dress",
       },
       {
         id: 58,
@@ -535,7 +535,7 @@ const allProducts = {
         subcategory: "Outerwear",
         ageGroup: "Kids (4-7 years)",
         color: "Yellow",
-        image: "/images/Kids Rain Jacket.jpg?height=400&width=300&text=Kids+Rain+Jacket",
+        image: "images/Kids Rain Jacket.jpg?height=400&width=300&text=Kids+Rain+Jacket",
       },
       {
         id: 59,             
@@ -545,7 +545,7 @@ const allProducts = {
         subcategory: "Shoes",
         ageGroup: "Toddler (2-4 years)",
         color: "Blue",
-        image: "/images/Toddler Sandals.jpg?height=400&width=300&text=Toddler+Sandals",
+        image: "images/Toddler Sandals.jpg?height=400&width=300&text=Toddler+Sandals",
       },
       {
         id: 60,
@@ -555,7 +555,7 @@ const allProducts = {
         subcategory: "Accessories",
         ageGroup: "Kids (4-7 years)",
         color: "Green",
-        image: "/images/Kids Water Bottle.jpg?height=400&width=300&text=Kids+Water+Bottle",
+        image: "images/Kids Water Bottle.jpg?height=400&width=300&text=Kids+Water+Bottle",
       },
       {
         id: 61,
@@ -565,7 +565,7 @@ const allProducts = {
         subcategory: "Tops",
         ageGroup: "Baby (0-24 months)",
         color: "Pink",
-        image: "/images/Baby Romper.jpg?height=400&width=300&text=Baby+Romper",
+        image: "images/Baby Romper.jpg?height=400&width=300&text=Baby+Romper",
       },
       {
         id: 62,
@@ -575,7 +575,7 @@ const allProducts = {
         subcategory: "Bottoms",
         ageGroup: "Older Kids (8-14 years)",
         color: "Blue",
-        image: "/images/Kids Shorts Set.jpg?height=400&width=300&text=Kids+Shorts+Set",
+        image: "images/Kids Shorts Set.jpg?height=400&width=300&text=Kids+Shorts+Set",
       },
       {
         id: 63,
@@ -585,7 +585,7 @@ const allProducts = {
         subcategory: "Dresses",
         ageGroup: "Kids (4-7 years)",
         color: "Purple",
-        image: "/images/Party Dress.jpg?height=400&width=300&text=Party+Dress",
+        image: "images/Party Dress.jpg?height=400&width=300&text=Party+Dress",
       },
       {
         id: 64,
@@ -595,7 +595,7 @@ const allProducts = {
         subcategory: "Outerwear",
         ageGroup: "Older Kids (8-14 years)",
         color: "Red",
-        image: "/images/Kids Hoodie.jpg?height=400&width=300&text=Kids+Hoodie",
+        image: "images/Kids Hoodie.jpg?height=400&width=300&text=Kids+Hoodie",
       },
       {
         id: 65,
@@ -605,7 +605,7 @@ const allProducts = {
         subcategory: "Shoes",
         ageGroup: "Kids (4-7 years)",
         color: "Black",
-        image: "/images/Kids Running Shoes.jpg?height=400&width=300&text=Kids+Running+Shoes",
+        image: "images/Kids Running Shoes.jpg?height=400&width=300&text=Kids+Running+Shoes",
       },
       {
         id: 66,
@@ -615,7 +615,7 @@ const allProducts = {
         subcategory: "Accessories",
         ageGroup: "Older Kids (8-14 years)",
         color: "Blue",
-        image: "/images/Kids Lunch Box.jpg?height=400&width=300&text=Kids+Lunch+Box",
+        image: "images/Kids Lunch Box.jpg?height=400&width=300&text=Kids+Lunch+Box",
       },
       {
         id: 67,
@@ -625,7 +625,7 @@ const allProducts = {
         subcategory: "Tops",
         ageGroup: "Baby (0-24 months)",
         color: "White",
-        image: "/images/Baby Sleepwear Set.jpg?height=400&width=300&text=Baby+Sleepwear+Set",
+        image: "images/Baby Sleepwear Set.jpg?height=400&width=300&text=Baby+Sleepwear+Set",
       },
       {
         id: 68,
@@ -635,7 +635,7 @@ const allProducts = {
         subcategory: "Bottoms",
         ageGroup: "Toddler (2-4 years)",
         color: "Gray",
-        image: "/images/Toddler Sweatpants.jpg?height=400&width=300&text=Toddler+Sweatpants",
+        image: "images/Toddler Sweatpants.jpg?height=400&width=300&text=Toddler+Sweatpants",
       },
       {
         id: 69,
@@ -645,7 +645,7 @@ const allProducts = {
         subcategory: "Dresses",
         ageGroup: "Toddler (2-4 years)",
         color: "Yellow",
-        image: "/images/Summer Dress.jpg?height=400&width=300&text=Summer+Dress",
+        image: "images/Summer Dress.jpg?height=400&width=300&text=Summer+Dress",
       },
       {
         id: 70,
@@ -655,7 +655,7 @@ const allProducts = {
         subcategory: "Outerwear",
         ageGroup: "Kids (4-7 years)",
         color: "Green",     
-        image: "/images/Kids Puffer Jacket.jpg?height=400&width=300&text=Kids+Puffer+Jacket",
+        image: "images/Kids Puffer Jacket.jpg?height=400&width=300&text=Kids+Puffer+Jacket",
       },
       {
         id: 71,
@@ -665,7 +665,7 @@ const allProducts = {
         subcategory: "Shoes",
         ageGroup: "Older Kids (8-14 years)",
         color: "Black",
-        image: "/images/Kids Soccer Cleats.jpg?height=400&width=300&text=Kids+Soccer+Cleats",
+        image: "images/Kids Soccer Cleats.jpg?height=400&width=300&text=Kids+Soccer+Cleats",
       },
       {
         id: 72,
@@ -675,7 +675,7 @@ const allProducts = {
         subcategory: "Accessories",
         ageGroup: "Kids (4-7 years)",
         color: "Blue",
-        image: "/images/Kids Baseball Cap.jpg?height=400&width=300&text=Kids+Baseball+Cap",
+        image: "images/Kids Baseball Cap.jpg?height=400&width=300&text=Kids+Baseball+Cap",
       }
     ],
     skincare: [
@@ -687,7 +687,7 @@ const allProducts = {
         subcategory: "Cleansers",
         skinType: "All Skin Types",
         concern: "Hydration",
-        image: "/images/Gentle Foaming Cleanser.jpg?height=400&width=300&text=Gentle+Foaming+Cleanser",
+        image: "images/Gentle Foaming Cleanser.jpg?height=400&width=300&text=Gentle+Foaming+Cleanser",
       },
       {
         id: 74,
@@ -697,7 +697,7 @@ const allProducts = {
         subcategory: "Moisturizers",
         skinType: "Dry",
         concern: "Hydration",
-        image: "/images/Hydrating Moisturizer.jpg?height=400&width=300&text=Hydrating+Moisturizer",
+        image: "images/Hydrating Moisturizer.jpg?height=400&width=300&text=Hydrating+Moisturizer",
       },
       {
         id: 75,
@@ -707,7 +707,7 @@ const allProducts = {
         subcategory: "Serums",
         skinType: "All Skin Types",
         concern: "Brightening",
-        image: "/images/Vitamin C Serum.jpg?height=400&width=300&text=Vitamin+C+Serum",
+        image: "images/Vitamin C Serum.jpg?height=400&width=300&text=Vitamin+C+Serum",
       },
       {
         id: 76,
@@ -717,7 +717,7 @@ const allProducts = {
         subcategory: "Masks",
         skinType: "Oily",
         concern: "Pores",
-        image: "/images/Clay Face Mask.jpg?height=400&width=300&text=Clay+Face+Mask",
+        image: "images/Clay Face Mask.jpg?height=400&width=300&text=Clay+Face+Mask",
       },
       {
         id: 77,
@@ -727,7 +727,7 @@ const allProducts = {
         subcategory: "Sunscreen",
         skinType: "All Skin Types",
         concern: "Anti-Aging",
-        image: "/images/SPF 50 Sunscreen.jpg?height=400&width=300&text=SPF+50+Sunscreen",
+        image: "images/SPF 50 Sunscreen.jpg?height=400&width=300&text=SPF+50+Sunscreen",
       },
       {
         id: 78,
@@ -737,7 +737,7 @@ const allProducts = {
         subcategory: "Treatments",
         skinType: "Combination",
         concern: "Anti-Aging",
-        image: "/images/Retinol Treatment.jpg?height=400&width=300&text=Retinol+Treatment",
+        image: "images/Retinol Treatment.jpg?height=400&width=300&text=Retinol+Treatment",
       },
       {
         id: 79,
@@ -747,7 +747,7 @@ const allProducts = {
         subcategory: "Cleansers",
         skinType: "Oily",
         concern: "Acne",
-        image: "/images/Oil-Free Cleanser.jpg?height=400&width=300&text=Oil-Free+Cleanser",
+        image: "images/Oil-Free Cleanser.jpg?height=400&width=300&text=Oil-Free+Cleanser",
       },
       {
         id: 80,
@@ -757,7 +757,7 @@ const allProducts = {
         subcategory: "Moisturizers",
         skinType: "Dry",
         concern: "Hydration",
-        image: "/images/Rich Night Cream.jpg?height=400&width=300&text=Rich+Night+Cream",
+        image: "images/Rich Night Cream.jpg?height=400&width=300&text=Rich+Night+Cream",
       },
       {
         id: 81,
@@ -767,7 +767,7 @@ const allProducts = {
         subcategory: "Serums",
         skinType: "All Skin Types", 
         concern: "Hydration",
-        image: "/images/Hyaluronic Acid Serum.jpg?height=400&width=300&text=Hyaluronic+Acid+Serum",
+        image: "images/Hyaluronic Acid Serum.jpg?height=400&width=300&text=Hyaluronic+Acid+Serum",
       },
       {
         id: 82,
@@ -777,7 +777,7 @@ const allProducts = {
         subcategory: "Masks",
         skinType: "All Skin Types",
         concern: "Brightening",
-        image: "/images/Sheet Mask Set.jpg?height=400&width=300&text=Sheet+Mask+Set",
+        image: "images/Sheet Mask Set.jpg?height=400&width=300&text=Sheet+Mask+Set",
       },
       {
         id: 83,
@@ -787,7 +787,7 @@ const allProducts = {
         subcategory: "Sunscreen",
         skinType: "Sensitive",
         concern: "Redness",
-        image: "/images/Mineral Sunscreen.jpg?height=400&width=300&text=Mineral+Sunscreen",
+        image: "images/Mineral Sunscreen.jpg?height=400&width=300&text=Mineral+Sunscreen",
       },
       {
         id: 84,
@@ -797,7 +797,7 @@ const allProducts = {
         subcategory: "Treatments",
         skinType: "Oily",
         concern: "Acne",
-        image: "/images/Salicylic Acid Treatment.jpg?height=400&width=300&text=Salicylic+Acid+Treatment",
+        image: "images/Salicylic Acid Treatment.jpg?height=400&width=300&text=Salicylic+Acid+Treatment",
       },
       {
         id: 85,
@@ -807,7 +807,7 @@ const allProducts = {
         subcategory: "Cleansers",
         skinType: "Dry",
         concern: "Hydration",
-        image: "/images/Creamy Cleanser.jpg?height=400&width=300&text=Creamy+Cleanser",
+        image: "images/Creamy Cleanser.jpg?height=400&width=300&text=Creamy+Cleanser",
       },
       {
         id: 86,
@@ -817,7 +817,7 @@ const allProducts = {
         subcategory: "Moisturizers",
         skinType: "Oily",
         concern: "Pores",
-        image: "/images/Gel Moisturizer.jpg?height=400&width=300&text=Gel+Moisturizer",
+        image: "images/Gel Moisturizer.jpg?height=400&width=300&text=Gel+Moisturizer",
       },
       {
         id: 87,
@@ -827,7 +827,7 @@ const allProducts = {
         subcategory: "Serums",
         skinType: "Combination",
         concern: "Pores",
-        image: "/images/Niacinamide Serum.jpg?height=400&width=300&text=Niacinamide+Serum",
+        image: "images/Niacinamide Serum.jpg?height=400&width=300&text=Niacinamide+Serum",
       },
       {
         id: 88,
@@ -837,7 +837,7 @@ const allProducts = {
         subcategory: "Masks",
         skinType: "All Skin Types",
         concern: "Hydration",
-        image: "/images/Sleeping Mask.jpg?height=400&width=300&text=Sleeping+Mask",
+        image: "images/Sleeping Mask.jpg?height=400&width=300&text=Sleeping+Mask",
       },
       {
         id: 89,
@@ -847,7 +847,7 @@ const allProducts = {
         subcategory: "Sunscreen",
         skinType: "All Skin Types",
         concern: "Anti-Aging",
-        image: "/images/Tinted Sunscreen.jpg?height=400&width=300&text=Tinted+Sunscreen",
+        image: "images/Tinted Sunscreen.jpg?height=400&width=300&text=Tinted+Sunscreen",
       },
       {
         id: 90,
@@ -857,7 +857,7 @@ const allProducts = {
         subcategory: "Treatments",
         skinType: "Oily",
         concern: "Acne",
-        image: "/images/Spot Treatment.jpg?height=400&width=300&text=Spot+Treatment",
+        image: "images/Spot Treatment.jpg?height=400&width=300&text=Spot+Treatment",
       },
       {
         id: 91,
@@ -867,7 +867,7 @@ const allProducts = {
         subcategory: "Cleansers",
         skinType: "Sensitive",
         concern: "Redness",
-        image: "/images/Micellar Water.jpg?height=400&width=300&text=Micellar+Water",
+        image: "images/Micellar Water.jpg?height=400&width=300&text=Micellar+Water",
       },
       {
         id: 92,
@@ -877,7 +877,7 @@ const allProducts = {
         subcategory: "Moisturizers",
         skinType: "Sensitive",
         concern: "Redness",
-        image: "/images/Barrier Repair Cream.jpg?height=400&width=300&text=Barrier+Repair+Cream",
+        image: "images/Barrier Repair Cream.jpg?height=400&width=300&text=Barrier+Repair+Cream",
       },
       {
         id: 93,
@@ -887,7 +887,7 @@ const allProducts = {
         subcategory: "Serums",
         skinType: "All Skin Types",
         concern: "Anti-Aging",
-        image: "/images/Peptide Serum.jpg?height=400&width=300&text=Peptide+Serum",
+        image: "images/Peptide Serum.jpg?height=400&width=300&text=Peptide+Serum",
       },
       {
         id: 94,
@@ -897,7 +897,7 @@ const allProducts = {
         subcategory: "Masks",
         skinType: "Combination",
         concern: "Pores",
-        image: "/images/Charcoal Mask.jpg?height=400&width=300&text=Charcoal+Mask",
+        image: "images/Charcoal Mask.jpg?height=400&width=300&text=Charcoal+Mask",
       },
       {
         id: 95,
@@ -907,7 +907,7 @@ const allProducts = {
         subcategory: "Sunscreen",
         skinType: "All Skin Types",
         concern: "Anti-Aging",
-        image: "/images/Sport Sunscreen.jpg?height=400&width=300&text=Sport+Sunscreen",
+        image: "images/Sport Sunscreen.jpg?height=400&width=300&text=Sport+Sunscreen",
       },
       {
         id: 96,
@@ -917,14 +917,14 @@ const allProducts = {
         subcategory: "Treatments",  
         skinType: "All Skin Types",
         concern: "Brightening",
-        image: "/images/Brightening Treatment.jpg?height=400&width=300&text=Brightening+Treatment",
+        image: "images/Brightening Treatment.jpg?height=400&width=300&text=Brightening+Treatment",
       }
     ],
   }
   
   // Function to get random products from a specific category or all categories
   function getRandomProducts(count, tag = null) {
-    let productPool = []
+    let productPool =[]
   
     // Combine all products from all categories
     Object.values(allProducts).forEach((categoryProducts) => {
