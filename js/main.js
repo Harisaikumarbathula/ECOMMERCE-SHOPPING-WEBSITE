@@ -18,16 +18,58 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchIcon = document.getElementById("search-icon")
   const searchOverlay = document.querySelector(".search-overlay")
   const closeSearch = document.querySelector(".close-search")
+  const searchInput = document.querySelector(".search-container input")
+  const searchButton = document.querySelector(".search-container button")
 
-  if (searchIcon && searchOverlay && closeSearch) {
+  if (searchIcon && searchOverlay && closeSearch && searchInput && searchButton) {
     searchIcon.addEventListener("click", (e) => {
       e.preventDefault()
       searchOverlay.classList.add("active")
+      searchInput.focus()
     })
 
     closeSearch.addEventListener("click", () => {
       searchOverlay.classList.remove("active")
     })
+
+    // Handle search button click
+    searchButton.addEventListener("click", handleSearch)
+
+    // Handle Enter key press in search input
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        handleSearch()
+      }
+    })
+
+    function handleSearch() {
+      const searchTerm = searchInput.value.toLowerCase().trim()
+      
+      // Define category mappings
+      const categoryMappings = {
+        'men': 'men.html',
+        'mens': 'men.html',
+        'male': 'men.html',
+        'women': 'women.html',
+        'womens': 'women.html',
+        'female': 'women.html',
+        'kids': 'kids.html',
+        'children': 'kids.html',
+        'baby': 'kids.html',
+        'skincare': 'skincare.html',
+        'skin': 'skincare.html',
+        'beauty': 'skincare.html'
+      }
+
+      // Check if search term matches any category
+      if (categoryMappings[searchTerm]) {
+        window.location.href = categoryMappings[searchTerm]
+      } else {
+        // If no category match, perform regular product search
+        // You can implement product search logic here
+        alert("No matching category found. Please try searching for specific products.")
+      }
+    }
   }
 
   // Featured Tab Switching
